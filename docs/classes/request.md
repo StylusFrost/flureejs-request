@@ -47,7 +47,7 @@
 
 ⊕ **new Request**(data?: _[RequestData](../interfaces/requestdata.md)_): [Request](request.md)
 
-_Defined in [index.ts:25](https://github.com/StylusFrost/flureejs-request/blob/415684d/src/index.ts#L25)_
+_Defined in [index.ts:25](https://github.com/StylusFrost/flureejs-request/blob/49cf938/src/index.ts#L25)_
 
 **Parameters:**
 
@@ -67,7 +67,7 @@ _Defined in [index.ts:25](https://github.com/StylusFrost/flureejs-request/blob/4
 
 **● \_from**: _`Buffer`_
 
-_Defined in [index.ts:24](https://github.com/StylusFrost/flureejs-request/blob/415684d/src/index.ts#L24)_
+_Defined in [index.ts:24](https://github.com/StylusFrost/flureejs-request/blob/49cf938/src/index.ts#L24)_
 
 ---
 
@@ -77,7 +77,7 @@ _Defined in [index.ts:24](https://github.com/StylusFrost/flureejs-request/blob/4
 
 **● \_senderPubKey**: _`Buffer`_
 
-_Defined in [index.ts:25](https://github.com/StylusFrost/flureejs-request/blob/415684d/src/index.ts#L25)_
+_Defined in [index.ts:25](https://github.com/StylusFrost/flureejs-request/blob/49cf938/src/index.ts#L25)_
 
 ---
 
@@ -87,7 +87,7 @@ _Defined in [index.ts:25](https://github.com/StylusFrost/flureejs-request/blob/4
 
 **● auth**: _`Buffer`_
 
-_Defined in [index.ts:19](https://github.com/StylusFrost/flureejs-request/blob/415684d/src/index.ts#L19)_
+_Defined in [index.ts:19](https://github.com/StylusFrost/flureejs-request/blob/49cf938/src/index.ts#L19)_
 
 ---
 
@@ -97,7 +97,7 @@ _Defined in [index.ts:19](https://github.com/StylusFrost/flureejs-request/blob/4
 
 **● db**: _`Buffer`_
 
-_Defined in [index.ts:17](https://github.com/StylusFrost/flureejs-request/blob/415684d/src/index.ts#L17)_
+_Defined in [index.ts:17](https://github.com/StylusFrost/flureejs-request/blob/49cf938/src/index.ts#L17)_
 
 ---
 
@@ -107,7 +107,7 @@ _Defined in [index.ts:17](https://github.com/StylusFrost/flureejs-request/blob/4
 
 **● formattedDate**: _`Buffer`_
 
-_Defined in [index.ts:18](https://github.com/StylusFrost/flureejs-request/blob/415684d/src/index.ts#L18)_
+_Defined in [index.ts:18](https://github.com/StylusFrost/flureejs-request/blob/49cf938/src/index.ts#L18)_
 
 ---
 
@@ -117,7 +117,7 @@ _Defined in [index.ts:18](https://github.com/StylusFrost/flureejs-request/blob/4
 
 **● host**: _`Buffer`_
 
-_Defined in [index.ts:16](https://github.com/StylusFrost/flureejs-request/blob/415684d/src/index.ts#L16)_
+_Defined in [index.ts:16](https://github.com/StylusFrost/flureejs-request/blob/49cf938/src/index.ts#L16)_
 
 ---
 
@@ -127,7 +127,7 @@ _Defined in [index.ts:16](https://github.com/StylusFrost/flureejs-request/blob/4
 
 **● param**: _`Buffer`_
 
-_Defined in [index.ts:14](https://github.com/StylusFrost/flureejs-request/blob/415684d/src/index.ts#L14)_
+_Defined in [index.ts:14](https://github.com/StylusFrost/flureejs-request/blob/49cf938/src/index.ts#L14)_
 
 ---
 
@@ -137,7 +137,7 @@ _Defined in [index.ts:14](https://github.com/StylusFrost/flureejs-request/blob/4
 
 **● r**: _`Buffer`_
 
-_Defined in [index.ts:21](https://github.com/StylusFrost/flureejs-request/blob/415684d/src/index.ts#L21)_
+_Defined in [index.ts:21](https://github.com/StylusFrost/flureejs-request/blob/49cf938/src/index.ts#L21)_
 
 ---
 
@@ -147,7 +147,7 @@ _Defined in [index.ts:21](https://github.com/StylusFrost/flureejs-request/blob/4
 
 **● raw**: _`Buffer`[]_
 
-_Defined in [index.ts:13](https://github.com/StylusFrost/flureejs-request/blob/415684d/src/index.ts#L13)_
+_Defined in [index.ts:13](https://github.com/StylusFrost/flureejs-request/blob/49cf938/src/index.ts#L13)_
 
 ---
 
@@ -157,7 +157,7 @@ _Defined in [index.ts:13](https://github.com/StylusFrost/flureejs-request/blob/4
 
 **● s**: _`Buffer`_
 
-_Defined in [index.ts:22](https://github.com/StylusFrost/flureejs-request/blob/415684d/src/index.ts#L22)_
+_Defined in [index.ts:22](https://github.com/StylusFrost/flureejs-request/blob/49cf938/src/index.ts#L22)_
 
 ---
 
@@ -167,7 +167,7 @@ _Defined in [index.ts:22](https://github.com/StylusFrost/flureejs-request/blob/4
 
 **● type**: _`Buffer`_
 
-_Defined in [index.ts:15](https://github.com/StylusFrost/flureejs-request/blob/415684d/src/index.ts#L15)_
+_Defined in [index.ts:15](https://github.com/StylusFrost/flureejs-request/blob/49cf938/src/index.ts#L15)_
 
 ---
 
@@ -177,7 +177,7 @@ _Defined in [index.ts:15](https://github.com/StylusFrost/flureejs-request/blob/4
 
 **● v**: _`Buffer`_
 
-_Defined in [index.ts:20](https://github.com/StylusFrost/flureejs-request/blob/415684d/src/index.ts#L20)_
+_Defined in [index.ts:20](https://github.com/StylusFrost/flureejs-request/blob/49cf938/src/index.ts#L20)_
 
 ---
 
@@ -189,7 +189,7 @@ _Defined in [index.ts:20](https://github.com/StylusFrost/flureejs-request/blob/4
 
 ▸ **\_overrideVSetterWithValidation**(): `void`
 
-_Defined in [index.ts:133](https://github.com/StylusFrost/flureejs-request/blob/415684d/src/index.ts#L133)_
+_Defined in [index.ts:133](https://github.com/StylusFrost/flureejs-request/blob/49cf938/src/index.ts#L133)_
 
 **Returns:** `void`
 
@@ -201,7 +201,7 @@ _Defined in [index.ts:133](https://github.com/StylusFrost/flureejs-request/blob/
 
 ▸ **\_validateV**(v: _`Buffer`_): `void`
 
-_Defined in [index.ts:121](https://github.com/StylusFrost/flureejs-request/blob/415684d/src/index.ts#L121)_
+_Defined in [index.ts:121](https://github.com/StylusFrost/flureejs-request/blob/49cf938/src/index.ts#L121)_
 
 **Parameters:**
 
@@ -219,7 +219,7 @@ _Defined in [index.ts:121](https://github.com/StylusFrost/flureejs-request/blob/
 
 ▸ **getSenderAuthID**(): `Buffer`
 
-_Defined in [index.ts:150](https://github.com/StylusFrost/flureejs-request/blob/415684d/src/index.ts#L150)_
+_Defined in [index.ts:150](https://github.com/StylusFrost/flureejs-request/blob/49cf938/src/index.ts#L150)_
 
 **Returns:** `Buffer`
 
@@ -231,7 +231,7 @@ _Defined in [index.ts:150](https://github.com/StylusFrost/flureejs-request/blob/
 
 ▸ **getSenderPublicKey**(): `Buffer`
 
-_Defined in [index.ts:162](https://github.com/StylusFrost/flureejs-request/blob/415684d/src/index.ts#L162)_
+_Defined in [index.ts:162](https://github.com/StylusFrost/flureejs-request/blob/49cf938/src/index.ts#L162)_
 
 **Returns:** `Buffer`
 
@@ -243,7 +243,7 @@ _Defined in [index.ts:162](https://github.com/StylusFrost/flureejs-request/blob/
 
 ▸ **sign**(privateKey: _`Buffer`_): `void`
 
-_Defined in [index.ts:216](https://github.com/StylusFrost/flureejs-request/blob/415684d/src/index.ts#L216)_
+_Defined in [index.ts:216](https://github.com/StylusFrost/flureejs-request/blob/49cf938/src/index.ts#L216)_
 
 **Parameters:**
 
@@ -265,11 +265,11 @@ _Defined in [index.ts:216](https://github.com/StylusFrost/flureejs-request/blob/
 
 ▸ **validate**(stringError: _`true`_): `string`
 
-_Defined in [index.ts:195](https://github.com/StylusFrost/flureejs-request/blob/415684d/src/index.ts#L195)_
+_Defined in [index.ts:195](https://github.com/StylusFrost/flureejs-request/blob/49cf938/src/index.ts#L195)_
 
 **Returns:** `boolean`
 
-_Defined in [index.ts:196](https://github.com/StylusFrost/flureejs-request/blob/415684d/src/index.ts#L196)_
+_Defined in [index.ts:196](https://github.com/StylusFrost/flureejs-request/blob/49cf938/src/index.ts#L196)_
 
 **Parameters:**
 
@@ -279,7 +279,7 @@ _Defined in [index.ts:196](https://github.com/StylusFrost/flureejs-request/blob/
 
 **Returns:** `boolean`
 
-_Defined in [index.ts:197](https://github.com/StylusFrost/flureejs-request/blob/415684d/src/index.ts#L197)_
+_Defined in [index.ts:197](https://github.com/StylusFrost/flureejs-request/blob/49cf938/src/index.ts#L197)_
 
 **Parameters:**
 
@@ -297,7 +297,7 @@ _Defined in [index.ts:197](https://github.com/StylusFrost/flureejs-request/blob/
 
 ▸ **verifySignature**(): `boolean`
 
-_Defined in [index.ts:174](https://github.com/StylusFrost/flureejs-request/blob/415684d/src/index.ts#L174)_
+_Defined in [index.ts:174](https://github.com/StylusFrost/flureejs-request/blob/49cf938/src/index.ts#L174)_
 
 **Returns:** `boolean`
 
