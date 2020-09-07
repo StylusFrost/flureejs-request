@@ -172,21 +172,56 @@ export default class Request {
    * Determines if the signature is valid
    */
   verifySignature(): boolean {
-    const digest = sha256(Buffer.from(this.param.toString('hex').normalize(), 'hex'))
-
-    const uri = '/fdb/' + this.db.toString() + '/' + this.type.toString()
-
-    const msg = `(request-target): post ${uri}
-x-fluree-date: ${this.formattedDate.toString()}
-digest: SHA-256=${digest.toString('base64')}`
-
     try {
       const v = bufferToInt(this.v)
-      this._senderPubKey = ecrecover(Buffer.from(msg), v, this.r, this.s)
+      this._senderPubKey = ecrecover(this.msg(), v, this.r, this.s)
     } catch (e) {
       return false
     }
     return !!this._senderPubKey
+  }
+
+  signature(): Buffer {
+    const newR = this.r[0] & 0x80 ? Buffer.concat([hexToUnit8Array('00'), this.r]) : this.r
+    const newS = this.s[0] & 0x80 ? Buffer.concat([hexToUnit8Array('00'), this.s]) : this.s
+    const result =
+      '02' +
+      newR.length.toString(16) +
+      newR.toString('hex') +
+      '02' +
+      newS.length.toString(16) +
+      newS.toString('hex')
+
+    const signature = Buffer.from(
+      this.v.toString('hex') + '30' + Buffer.from(result, 'hex').length.toString(16) + result,
+      'hex',
+    )
+
+    const keyID = Buffer.compare(this.auth, Buffer.alloc(0)) != 0 ? this.auth.toString() : 'na'
+
+    return Buffer.from(
+      'keyId="' +
+        keyID +
+        '",headers="(request-target) x-fluree-date digest",algorithm="ecdsa-sha256",signature="' +
+        signature.toString('hex') +
+        '"',
+    )
+
+    function hexToUnit8Array(str: string) {
+      return new Uint8Array(Buffer.from(str, 'hex'))
+    }
+  }
+
+  digest(): Buffer {
+    const digest = sha256(Buffer.from(this.param.toString('hex').normalize(), 'hex'))
+    return Buffer.from(`SHA-256=${digest.toString('base64')}`)
+  }
+
+  private msg(): Buffer {
+    const uri = '/fdb/' + this.db.toString() + '/' + this.type.toString()
+    return Buffer.from(`(request-target): post ${uri}
+    x-fluree-date: ${this.formattedDate.toString()}
+    digest: ${this.digest().toString()}`)
   }
 
   /**
@@ -214,15 +249,7 @@ digest: SHA-256=${digest.toString('base64')}`
    */
 
   sign(privateKey: Buffer) {
-    const digest = sha256(Buffer.from(this.param.toString('hex').normalize(), 'hex'))
-
-    const uri = '/fdb/' + this.db.toString() + '/' + this.type.toString()
-
-    const signingString = `(request-target): post ${uri}
-x-fluree-date: ${this.formattedDate.toString()}
-digest: SHA-256=${digest.toString('base64')}`
-
-    const sig = ecsign(Buffer.from(signingString), privateKey)
+    const sig = ecsign(this.msg(), privateKey)
 
     Object.assign(this, sig)
   }
